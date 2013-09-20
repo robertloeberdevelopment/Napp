@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/achtergrond2" >
+    
+	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_margin="1dp"
+	    android:layout_marginLeft="1dp"
+	    android:layout_marginRight="1dp"
+	    android:max="120"
+	    android:orientation="vertical"
+	    android:progress="1" >
+	  
+	    <TableLayout
+	        android:id="@+id/tableLayout2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="3dp"
+	        android:layout_marginTop="1dp" >  
+	    
+		<TableRow
+		    android:id="@+id/tableRow2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="fill_horizontal" >
+
+		    <TextView
+		        android:id="@+id/zoekbar_tekst"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="top"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginTop="10dp"
+		        android:text="@string/tekst_zoekbar"
+		        android:textColor="#fff"
+		        android:textSize="20sp" />
+
+		    <TextView
+		        android:id="@+id/zoekbar_value"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="top"
+		        android:layout_marginLeft="2dp"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_weight="1"
+		        android:text="10"
+		        android:textColor="#fff"
+		        android:textSize="20sp" />
+
+		    <ImageButton
+		        android:id="@+id/button2"
+		        android:layout_width="35dp"
+		        android:layout_height="35dp"
+		        android:layout_gravity="top"
+		        android:layout_marginLeft="30dp"
+		        android:layout_marginTop="5dp"
+		        android:onClick="explanation"
+		        android:src="@drawable/question_red"
+		        android:background="@drawable/round_button"
+		        android:textColor="#000000" />
+
+		</TableRow>
+
+   </TableLayout>
+	   
+	    <SeekBar
+	        android:id="@+id/seekbar"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:max="120"
+	        android:progress="1" />
+  
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_marginBottom="7dp"
+	        android:layout_marginLeft="7dp"
+	        android:layout_marginTop="15dp"
+	        android:layout_weight="1"
+	        android:text="@string/text_nap_start_sound"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="#fff"
+	        android:textSize="20sp" />
+	    
+	    <RadioGroup
+	        android:id="@+id/snoze_sound"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:baselineAligned="false" 
+	         android:orientation="vertical" >
+	    
+	    
+	       <RadioButton
+	           android:id="@+id/sound_sleep_sea"
+	         
+	           android:layout_height="wrap_content"
+	          android:layout_width="wrap_content"
+	           android:layout_marginLeft="5dp"
+	           android:layout_marginRight="10dp"
+	           android:text="@string/sound_sea" />
+
+	        <RadioButton
+	            android:id="@+id/sound_sleep_grasshoppers"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="@string/sound_grasshoppers" />
+
+	        <RadioButton
+	            android:id="@+id/sound_sleep_forest"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:text="@string/sound_forest" />
+	        
+	         <RadioButton
+	            android:id="@+id/sound_sleep_silence"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	          	 android:checked="true"
+	            android:text="@string/sound_silence" />  
+	
+	       
+
+	    </RadioGroup>
+
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_marginBottom="7dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="15dp"
+	        android:layout_weight="1"
+	        android:text="@string/text_nap_slowly_wakeup_sound"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="#fff"
+	        android:textSize="20sp" />
+
+	    <RadioGroup
+	        android:id="@+id/slow_wakeup_sound"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	         android:orientation="vertical"  >
+
+	
+
+	        <RadioButton
+	            android:id="@+id/sound_wakeup_sea"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="10dp"
+	            android:text="@string/sound_sea" />
+
+	        <RadioButton
+	            android:id="@+id/sound_wakeup_grasshoppers"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="@string/sound_grasshoppers" />
+
+	        <RadioButton
+	            android:id="@+id/sound_wakeup_forest"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:text="@string/sound_forest" />
+	        
+	           <RadioButton
+	            android:id="@+id/sound_wakeup_silence"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	          	android:checked="true"
+	            android:text="@string/sound_silence" />
+	        
+   	
+	    </RadioGroup>
+
+	    <TextView
+	        android:id="@+id/textView4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_marginBottom="7dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="15dp"
+	        android:layout_weight="1"
+	        android:text="@string/text_nap_final_wakeup_sound"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="#fff"
+	        android:textSize="20sp" />
+
+	    <RadioGroup
+	        android:id="@+id/final_wakeup_call"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	         android:orientation="vertical"  >
+
+
+	     
+	
+	        
+	        <RadioButton
+	            android:id="@+id/final_wakeup_bell1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	               android:checked="true"
+	            android:text="@string/wakeup_bell1" />
+
+	        <RadioButton
+	            android:id="@+id/final_wakeup_zen_bell"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="@string/wakeup_zen_bell" />
+
+	        <RadioButton
+	            android:id="@+id/final_wakeup_waky_waky"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="@string/wakeup_waky_waky" />
+	        
+	        
+	        
+	        <RadioButton
+	            android:id="@+id/final_wakeup_callas"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	      
+	            android:text="@string/wakeup_callas" />
+
+	    </RadioGroup>
+
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="300dp"
+	        android:layout_height="0dp"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="0dp"
+	        android:layout_marginTop="20dp"
+	        android:layout_weight="2.01"
+	        android:onClick="startNap"
+	        android:text="@string/start_button"
+	        android:textColor="#000000"
+	        android:textSize="20sp" />
+
+	</LinearLayout>
+
+</ScrollView>
