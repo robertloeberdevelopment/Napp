@@ -1,70 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-      android:background="@drawable/scherm_explanation" >
-
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginTop="20dp"
-        android:layout_weight="6.79"
-        android:singleLine="false"
-        android:text="@string/explanation_content"
-        android:textColor="#fff"
-        android:textSize="18sp" />
-    
-     <TextView
-         android:id="@+id/textView2"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_marginBottom="20dp"
-         android:layout_marginLeft="7dp"
-         android:layout_marginRight="7dp"
-         android:layout_marginTop="10dp"
-         android:layout_weight="6.79"
-         android:autoLink="email"
-         android:textColorLink="#fff"
-         android:text="@string/explanation_content2"
-         android:textColor="#fff"
-         android:textSize="18sp" />
-
-       <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginTop="20dp"
-        android:layout_weight="6.79"
-        android:singleLine="false"
-        android:text="@string/explanation_credits"
-        android:textColor="#fff"
-        android:textSize="14sp" />
-     
-     
-     <Button
-         android:id="@+id/button1"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_marginLeft="7dp"
-         android:layout_marginRight="7dp"
-         android:layout_weight="6.79"
-         android:onClick="back"
-         android:text="@string/back" />
-
-</LinearLayout>
-</ScrollView>
